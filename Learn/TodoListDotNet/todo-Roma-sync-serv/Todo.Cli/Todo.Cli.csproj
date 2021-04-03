@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AssemblyName>todo</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Todo.CliArguments\Todo.CliArguments.csproj" />
+      <ProjectReference Include="..\Todo.Core\Todo.Core.csproj" />
+      <ProjectReference Include="..\Todo.DataBase\Todo.DataBase.csproj" />
+      <ProjectReference Include="..\Todo.RestTaskRepository\Todo.RestTaskRepository.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.0-preview.4.20251.6" />
+      <PackageReference Include="morelinq" Version="3.3.2" />
+    </ItemGroup>
+
+</Project>
